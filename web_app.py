@@ -238,11 +238,11 @@ matriz = partida['matriz']
 placares = partida['placares']
 
 col1, col2, col3, col4, col5 = st.columns(5)
-col1.image(dados.loc[team1, 'LinkBandeiraGrande'])  
+col1.image(dados.loc[team1, 'LinkBandeiraPequena'])  
 col2.metric(selecao1, prob[0])
 col3.metric('Empate', prob[1])
 col4.metric(selecao2, prob[2]) 
-col5.image(dados.loc[team2, 'LinkBandeiraGrande'])
+col5.image(dados.loc[team2, 'LinkBandeiraPequena'])
 
 st.markdown('---')
 st.markdown("## 📊 Probabilidades dos Placares") 
